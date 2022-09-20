@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
+    <title>ORDD - Field Appearance Settings</title>
+</head>
+<body>
+    <div id="ordd-page" class="ordd-page">
+
+        <!-- Header -->
+        <div class="ordd-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-wrap">
+                            <div class="branding">
+                                <a href=""><img src="assets/images/ordd-logo.svg" alt="Logo" /></a>
+                            </div>
+
+                            <nav class="navbar navbar-expand-lg navbar-light ordd-navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/></svg>
+                                </span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav menu nav-menu">
+                                        <li class="nav-link"><a class="nav-link" href="welcome-page.html">ORDD Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="delivery-schedule.html">Delivery Schedule</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="business-days.html">Settings</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="pickup-locations.html">Pickup Locations</a></li>
+                                        <li class="nav-item active"><a class="nav-link" href="label-message.html">Appearance</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="google-calendar-sync.html">Integrations</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="delivery-calendar.html">Delivery Calender</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <div class="ordd-version">
+                                <p class="ver-fig">Version 5.7.2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Content Area -->
+        <div class="ordd-content-area">
+            <div class="container cw-full secondary-nav">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Secondary Navigation -->
+                        <div class="secondary-nav-wrap">
+                            <ul>
+                                <li class="current-menu-item"><a href="label-message.html">Labels & Messages</a></li>
+                                <li><a href="calendar-appearance.html">Calendar Appearance</a></li>
+                                <li><a href="additional-settings.html">Additional Settings</a></li>
+                            </ul>
+                        </div>
+                        <!-- Secondary Navigation - End -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="container fas-page-wrap">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ordd-page-head phw-btn">
+                            <div class="col-left">
+                                <h1>Labels & Messages</h1>
+                                <p>Labels and Message description goes here.</p>
+                            </div>
+                            <div class="col-right">
+                                <button type="button">Save Settings</button>
+                            </div>
+                        </div>
+
+                        <div class="wbc-accordion">
+                            <div class="panel-group ordd-accordian" id="wbc-accordion">
+                                <!-- First Panel -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h2 class="panel-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
+                                            Labels: Product Page Labels
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <div class="tbl-mod-1">
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Check-In Date:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="Start Date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Check-Out Date:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="End Date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Booking Time:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="Booking Time">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Choose Time Text:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="Choose a Time">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Fixed Block Drop Down Label:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="Select Period">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Label For Booking Price:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="Booking Price Label">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Second Panel -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h2 class="panel-title" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
+                                           Labels: Order received page and in email notification
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <div class="tbl-mod-1">
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Check-In Date:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="Start Date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Check-Out Date:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="End Date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Booking Time:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="Booking Time">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>ICS File Name:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <input class="ib-md" type="text" name="" placeholder="Mycal">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>   
+
+                                 <!-- Third Panel -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h2 class="panel-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
+                                            Labels: Cart & Check-out Page
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <div class="tbl-mod-1">
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Check-In Date:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="Start Date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Check-Out Date:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="End Date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Booking Time:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="Booking Time">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                                  <!-- Fourth Panel -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h2 class="panel-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
+                                            Text for Add to Cart button
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <div class="tbl-mod-1">
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Text For Add To Cart Button:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="Book Now!">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Text For Check Availability Button:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="Check Availability">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Text For Add To Cart Button On Shop Page:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="hello">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Text For Sale:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="Sale Text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Text For Rent:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="Rent Text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <!-- Fifth Panel -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h2 class="panel-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
+                                           Booking Availability Message on Product Page
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <div class="tbl-mod-1">
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                      <label>Booking Availability Messages on Product Page:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <textarea class="ta-sm" placeholder="AVAILABLE_SPOTS stock total"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Availability Dispaly Message For A Date:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <textarea class="ta-sm" placeholder="AVAILABLE_SPOTS bookings are Available on date "></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Availability Display Message For a Time Slot:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <textarea class="ta-sm" placeholder="AVAILABLE_SPOTS are avilable for TIME and DATE"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>  
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Availability Display Messages For A Date When Attribute Level Lockout Is Set:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <textarea class="ta-sm" placeholder="AVAILABLE_SPOTS ATTRIBUTE_NAME bookings are avilable on date"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Availability Display Messages For A Time When Attribute Level Lockout Is Set:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <textarea class="ta-sm" placeholder="AVAILABLE_SPOTS ATTRIBUTE_NAME bookings are avilable For TIME and DATE"></textarea>
+                                                        </div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                            <label>Message To Be Displayed When The Time Slot Is Blocked In Real Time:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <textarea class="ta-sm" placeholder="That date just got booked .Please reload the page. "></textarea>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Message TO BE Displayed For Min & Max Allowed Dates Selection for Multiple Dates:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <textarea class="ta-sm" placeholder="Select a minimum of Min Days and maximun of Max Days"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sixth Panel -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h2 class="panel-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
+                                            Booking Availability Error Messages on the Product, Cart & Checkout Pages
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <div class="tbl-mod-1">
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                    <label>Limited Availability Error Message For A Date:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <textarea class="ta-sm" placeholder="PRODUCT_NAME has only AVAILABLE_SPOTS tickets available for the Date."></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>No Availability Error Message For A Date:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <textarea class="ta-sm" placeholder="For PRODUCT_NAME,the time TIME in DATE has been fully booked. PLease try another date."></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Limited Availability Error Message For a Time Slot:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <textarea class="ta-sm" placeholder="PRODUCT_NAME has only AVAILABLE_SPOTS tickets available for TIME and DATE."></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>  
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>No Availability Error Message For a Time Slot:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <textarea class="ta-sm" placeholder="For PRODUCT_NAME, the time TIME on DATE has been fully booked. Please try another timeslot."></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Limited Availability Error Messages For A Date When Attribute Level Lockout Is Set :</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <textarea class="ta-sm" placeholder="PRODUCT_NAME has only AVAILABLE_SPOTS ATTRIBUTE_NAME tickets available for the date DATE."></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                            <label>Limited Availability Error Messages For A Time Slot When Attribute Level Lockout Is Set:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <textarea class="ta-sm" placeholder="PRODUCT_NAME has only AVAILABLE_SPOTS ATTRIBUTE_NAME tickets available for TIME on DATE.. "></textarea>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                            <div class="ss-foot">
+                                <button type="button">Save Settings</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- Content Area End -->
+
+        <!-- Footer -->
+        <div class="ordd-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-wrap">
+                            <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                                <img class="msg-icon" src="assets/images/icon-info-grey.svg" alt="Logo" /><a href="#">Get our Subscriptions Addon</a> & setup recurring deliveries with WooCommerce Subscriptions plugin & Order Delivery Date plugin.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="ft-text">
+                                <p><a href="#">Need Support?</a> <strong>We’re always happy to help you.</strong></p>
+                                <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </div>
+
+    <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-tokenfield.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
