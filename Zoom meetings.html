@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
+    <title>ORDD - Google Calendar Sync</title>
+</head>
+<body>
+    <div id="ordd-page" class="ordd-page">
+
+        <!-- Header -->
+        <div class="ordd-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-wrap">
+                            <div class="branding">
+                                <a href=""><img src="assets/images/ordd-logo.svg" alt="Logo" /></a>
+                            </div>
+
+                            <nav class="navbar navbar-expand-lg navbar-light ordd-navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/></svg>
+                                </span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav menu nav-menu">
+                                        <li class="nav-link"><a class="nav-link" href="welcome-page.html">ORDD Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="business-days.html">Settings</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="pickup-locations.html">Pickup Locations</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="field-appearance.html">Appearance</a></li>
+                                        <li class="nav-item active"><a class="nav-link" href="google-calendar-sync.html">Integrations</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="delivery-calendar.html">Delivery Calender</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <div class="ordd-version">
+                                <p class="ver-fig">Version 5.7.2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Content Area -->
+        <div class="ordd-content-area">
+            <div class="container cw-full secondary-nav">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Secondary Navigation -->
+                        <div class="secondary-nav-wrap">
+                            <ul>
+                                <li class="current-menu-item"><a href="google-calendar-sync.html">Google Sync</a></li>
+                                <li><a href="integrations-settings.html">Zoom Meeting</a></li>
+                            </ul>
+                        </div>
+                        <!-- Secondary Navigation - End -->
+                    </div>
+                </div>
+            </div>
+
+         
+
+            <div class="container bd-page-wrap">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ordd-page-head phw-btn">
+                            <div class="col-left">
+                                <h1>Zoom Meeting</h1>
+                                <p>Zoom meetings descriptions goes here</p>
+                            </div>
+                            <div class="col-right">
+                                <button type="button">Save Settings</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="wbc-box">
+                            <div class="wbc-content">
+                                <div class="tbl-mod-1">
+                                    <div class="tm1-row">
+                                        <div class="col-left">
+                                            <h2>Zoom Meeting</h2>
+                                        </div>
+                                    </div>
+                                    <div class="tm1-row cb_opt_val_21">
+                                        <div class="col-right">
+                                            <label>Instructions:</label>
+                                            <p>To finf your API Key And Do The Following:</p><br>
+                                            <p>1. Sign In your Zoom account.</p>
+                                            <p>2. Visit the Zoom App Marketplace.</p>
+                                            <p>3. Click on the <b>Devlop</b> Option in the dropdown on the top-right corner and select <b>Build App</b>.</p>
+                                            <p>4. A page with various app types will be displayed. Select <b>JWT</b> as the app type and click on <b>Create</b>.</p>
+                                            <p>5. After creating your app, fill out descriptive and contact information.</p>
+                                            <p>6. Go <b>App Credentials</b> tab and look fir the <b>API Key</b> and <b>API Secret</b>.</p>
+                                            <p>7. Once you've copied over your API Key and Secret, go to <b>Activation</b> tab and make sure your app is activated.</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="tm1-row">
+                                        <div class="col-left">
+                                            <label>API Key:</label>
+                                        </div>
+                                        <div class="col-right">
+                                            <div class="rc-flx-wrap flx-aln-center">
+                                                <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                <input class="ib-md" type="text" name="timefrom" placeholder="API Key" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tm1-row">
+                                        <div class="col-left">
+                                            <label>API Secret:</label>
+                                        </div>
+                                        <div class="col-right">
+                                            <div class="rc-flx-wrap flx-aln-center">
+                                                <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                <input class="ib-md" type="text" name="timefrom" placeholder="API Secret" />
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Content Area End -->
+
+       
+
+
+
+
+
+
+
+        <!-- Footer -->
+        <div class="ordd-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-wrap">
+                            <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                                <img class="msg-icon" src="assets/images/icon-info-grey.svg" alt="Logo" /><a href="#">Get our Subscriptions Addon</a> & setup recurring deliveries with WooCommerce Subscriptions plugin & Booking Delivery Date plugin.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="ft-text">
+                                <p><a href="#">Need Support?</a> <strong>We’re always happy to help you.</strong></p>
+                                <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </div>
+
+    <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-tokenfield.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

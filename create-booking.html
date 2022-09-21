@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
+    <link rel="stylesheet" href="assets/css/choices.min.css">
+    <script src="assets/js/choices.min.js"></script>
+    <title>ORDD - Business Days</title>
+</head>
+<body>
+    <div id="ordd-page" class="ordd-page">
+
+        <!-- Header -->
+        <div class="ordd-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-wrap">
+                            <div class="branding">
+                                <a href=""><img src="assets/images/ordd-logo.svg" alt="Logo" /></a>
+                            </div>
+
+                            <nav class="navbar navbar-expand-lg navbar-light ordd-navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/></svg>
+                                </span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav menu nav-menu">
+                                        <li class="nav-link"><a class="nav-link" href="welcome-page.html">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="common-schedule-settings.html">Settings</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="label-message.html">Appearance</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="bulk-booking.html">Bulk Booking</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="google-calendar-sync.html">Integrations</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="Addons.html">Addons</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="booking-calendar.html">Booking Calendar</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="holiday.html">Holiday</a></li>
+                                        <li class="nav-item active"><a class="nav-link" href="create-booking.html">Create Booking</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <div class="ordd-version">
+                                <p class="ver-fig">Version 5.7.2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+            <div class="container bd-page-wrap">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ordd-page-head phw-btn">
+                            <div class="col-left">
+                                <h1>Create Booking</h1>
+                                <p>You can create a new booking for a customer here. This form will create a booking for the user, and optionally an associated order. Created orders will be marked as processing.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="wbc-box">
+                            <div class="wbc-content">
+                                <div class="tbl-mod-1">
+                                    <div class="tm1-row">
+                                        <div class="col-left">
+                                            <label>Select Customer:</label>
+                                        </div>
+                                        <div class="col-right">
+                                            <div class="rc-flx-wrap flx-aln-center">
+                                                <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                <select class="ib-md">
+                                                    <option>Guest</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tm1-row">
+                                        <div class="col-left">
+                                            <label>Bookable Product:</label>
+                                        </div>
+                                        <div class="col-right">
+                                            <div class="rc-flx-wrap flx-aln-center">
+                                                <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                <select class="ib-md">
+                                                    <option>Select a bookable product...</option>
+                                                    <option selected>Duration Based TIme (#1069)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tm1-row">
+                                        <div class="col-left">
+                                            <label>Create Order:</label>
+                                        </div>
+                                        <div class="col-right">
+                                            <div class="rc-flx-wrap flx-aln-center ro-wrap">
+                                                <div class="rb-flx-style">
+                                                    <div class="el-radio el-radio-green">
+                                                        <input type="radio" name="rb_opt_nm_7" id="7_1" value="rb_opt_val_3">
+                                                        <label class="el-radio-style" for="7_1"></label>
+                                                    </div>
+                                                    <label for="7_1">
+                                                        <br>Create a new corresponding order for this new booking.<br> Please note - the booking will not be active until the order is processed/completed.</label>
+                                                </div>
+                                              
+                                                <div class="rb-flx-style">
+                                                    <div class="el-radio el-radio-green">
+                                                        <br>
+                                                        <input type="radio" name="rb_opt_nm_7" id="7_2" value="rb_opt_val_4">
+                                                        <label class="el-radio-style" for="7_2"></label>
+                                                    </div>
+                                                        <label for="7_2"><br>Assign this booking to an existing order with this ID: &nbsp; <input class="ib-md" type="text" name="" value="525"> </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tm1-row">
+                                        <div class="col-left">
+                                            <label>Date Start/End:</label>
+                                        </div>
+                                        <div class="col-right">
+                                            <div class="rc-flx-wrap flx-aln-center">
+                                                <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                <select class="ib-md">
+                                                    <option>20-12-2022</option>
+                                                </select>
+                                                <p> &nbsp;To &nbsp;</p>
+                                                <select class="ib-md">
+                                                    <option>20-12-2022</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tm1-row">
+                                        <div class="col-left">
+                                            <label>Payment Type:</label>
+                                        </div>
+                                        <div class="col-right">
+                                            <div class="rc-flx-wrap flx-aln-center ro-wrap">
+                                                <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                <div class="rb-flx-style">
+                                                    <div class="el-radio el-radio-green">
+                                                        <input type="radio" name="rb_opt_nm_7" id="7_1" value="rb_opt_val_3">
+                                                        <label class="el-radio-style" for="7_1"></label>
+                                                    </div>
+                                                    <label for="7_1">Partial Payment</label>
+                                                </div>
+                                                <div class="rb-flx-style">
+                                                    <div class="el-radio el-radio-green">
+                                                        <input type="radio" name="rb_opt_nm_7" id="7_2" value="rb_opt_val_4">
+                                                        <label class="el-radio-style" for="7_2"></label>
+                                                    </div>
+                                                    <label for="7_2">Full Payement</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tm1-row">
+                                        <div class="col-left">
+                                            <label>Quantity:</label>
+                                        </div>
+                                        <div class="col-right">
+                                            <div class="rc-flx-wrap flx-aln-center">
+                                                <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                <select class="ib-md">
+                                                    <option>3</option>
+                                                    <option>2</option>
+                                                    <option>1</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                <div class="tm1-row">
+                                        <div class="col-left">
+                                        </div>
+                                    <div class="rb-col">
+                                        <p>Total : $1000</p>    
+                                        <a href="#" class="secondary-btn pl-ss-btn">Create Booking</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="bdp-foot">
+                            <button type="button">Save Settings</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Area End -->
+
+        <!-- Footer -->
+        <div class="ordd-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-wrap">
+                            <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                                <img class="msg-icon" src="assets/images/icon-info-grey.svg" alt="Logo" /><a href="#">Get our Subscriptions Addon</a> & setup recurring deliveries with WooCommerce Subscriptions plugin & Order Delivery Date plugin.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="ft-text">
+                                <p><a href="#">Need Support?</a> <strong>We’re always happy to help you.</strong></p>
+                                <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </div>
+
+    
+    <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-tokenfield.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
