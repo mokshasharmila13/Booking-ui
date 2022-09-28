@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
+    <link rel="stylesheet" href="assets/css/choices.min.css">
+    <script src="assets/js/choices.min.js"></script>
+    <title>ORDD - Send Reminder</title>
+</head>
+<body>
+    <div id="ordd-page" class="ordd-page">
+
+        <!-- Header -->
+        <div class="ordd-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-wrap">
+                            <div class="branding">
+                                <a href=""><img src="assets/images/ordd-logo.svg" alt="Logo" /></a>
+                            </div>
+
+                            <nav class="navbar navbar-expand-lg navbar-light ordd-navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/></svg>
+                                </span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav menu nav-menu">
+                                        <li class="nav-link active"><a class="nav-link" href="welcome-page.html">ORDD Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="delivery-schedule.html">Delivery Schedule</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="business-days.html">Settings</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="pickup-locations.html">Pickup Locations</a></li>
+ <li class="nav-item"><a class="nav-link" href="label-message.html">Appearance</a></li>                                        <li class="nav-item"><a class="nav-link" href="google-calendar-sync.html">Integrations</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="delivery-calendar.html">Delivery Calender</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <div class="ordd-version">
+                                <p class="ver-fig">Version 5.7.2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Content Area -->
+        <div class="ordd-content-area">
+            <div class="container cw-full secondary-nav">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Secondary Navigation -->
+                        <div class="secondary-nav-wrap">
+                            <ul>
+                                <li><a href="welcome-page.html">Welcome</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="plugins-license.html">Plugins License</a></li>
+                                <li><a href="tools.html">Tools</a></li>
+                                <li class="current-menu-item"><a href="send-reminder.html">Send Reminder</a></li>
+                            </ul>
+                        </div>
+                        <!-- Secondary Navigation - End -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="container ordd-reminder-section">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ordd-page-head">
+                            <h1>Send Reminder</h1>
+                        </div>
+
+                        <div class="wbc-accordion">
+                            <div class="panel-group ordd-accordian" id="wbc-accordion">
+                                <!-- First Panel -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h2 class="panel-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
+                                            Automatic Reminders
+                                        </h2>
+                                        <p>* The reminder emails will be sent for the orders that are either of 'Processing' Or 'Completed' status.</p>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <div class="tbl-mod-1">
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Number of Days for Reminder Before Delivery Date:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <select class="ib-md">
+                                                                <option>02</option>
+                                                                <option>05</option>
+                                                                <option>07</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Enable Reminder Emails for Admin:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <label class="el-switch el-switch-green">
+                                                                <input type="checkbox" name="cb_opt_nm_20" value="cb_opt_val_20" checked>
+                                                                <span class="el-switch-style"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row bdr-0 pt-0">
+                                                    <div class="col-left"></div>
+                                                    <div class="col-right sb-wrap">
+                                                        <input class="secondary-btn" type="submit" name="" value="Save Settings">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Second Panel -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h2 class="panel-title" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
+                                            Manual Reminders
+                                        </h2>
+                                        <p>You may send an email notification to all customers who have a future delivery. This will use the default template specified under <a href="#">WooCommerce > Settings > Emails</a>.</p>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <div class="tbl-mod-1">
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Order Ids:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <select id="choices-multiple-remove-button" class="ib-small" placeholder="Select Order Ids" multiple>
+                                                                <option value="2535">#2535</option>
+                                                                <option value="3632">#3632</option>
+                                                                <option value="4568">#4568</option>
+                                                                <option value="7895">#7895</option>
+                                                                <option value="9512">#9512</option>
+                                                                <option value="3214">#3214</option>
+                                                                <option value="9632">#9632</option>
+                                                            </select>  
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Subject:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" value="Delivery Reminder">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Message:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <img src="assets/images/editor.png" alt="Editor">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row bdr-0 pt-0">
+                                                    <div class="col-left"></div>
+                                                    <div class="col-right sb-wrap">
+                                                        <p>You can insert the following tags. They will be replaced dynamically: {order_date} {order_number} {customer_name} {customer_first_name} {customer_last_name} {delivery_date} {delivery_time} {order_details}</p>
+                                                        <input class="secondary-btn" type="submit" name="" value="Save Drafts">
+                                                        <input class="secondary-btn reverse" type="submit" name="" value="Send Reminder">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Area End -->
+
+        <!-- Footer -->
+        <div class="ordd-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-wrap">
+                            <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                                <img class="msg-icon" src="assets/images/icon-info-grey.svg" alt="Logo" /><a href="#">Get our Subscriptions Addon</a> & setup recurring deliveries with WooCommerce Subscriptions plugin & Booking Delivery Date plugin.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="ft-text">
+                                <p><a href="#">Need Support?</a> <strong>We’re always happy to help you.</strong></p>
+                                <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </div>
+
+    <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-tokenfield.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

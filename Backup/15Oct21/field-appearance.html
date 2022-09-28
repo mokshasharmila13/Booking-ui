@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
+    <title>ORDD - Field Appearance Settings</title>
+</head>
+<body>
+    <div id="ordd-page" class="ordd-page">
+
+        <!-- Header -->
+        <div class="ordd-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-wrap">
+                            <div class="branding">
+                                <a href=""><img src="assets/images/ordd-logo.svg" alt="Logo" /></a>
+                            </div>
+
+                            <nav class="navbar navbar-expand-lg navbar-light ordd-navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/></svg>
+                                </span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav menu nav-menu">
+                                        <li class="nav-link"><a class="nav-link" href="welcome-page.html">ORDD Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="delivery-schedule.html">Delivery Schedule</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="business-days.html">Settings</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="pickup-locations.html">Pickup Locations</a></li>
+                                        <li class="nav-item active"><a class="nav-link" href="label-message.html">Appearance</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="google-calendar-sync.html">Integrations</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="delivery-calendar.html">Delivery Calender</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <div class="ordd-version">
+                                <p class="ver-fig">Version 5.7.2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Content Area -->
+        <div class="ordd-content-area">
+            <div class="container cw-full secondary-nav">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Secondary Navigation -->
+                        <div class="secondary-nav-wrap">
+                            <ul>
+                                <li class="current-menu-item"><a href="field-appearance.html">Field Appearance</a></li>
+                                <li><a href="calendar-appearance.html">Calendar Appearance</a></li>
+                                <li><a href="additional-settings.html">Additional Settings</a></li>
+                            </ul>
+                        </div>
+                        <!-- Secondary Navigation - End -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="container fas-page-wrap">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ordd-page-head phw-btn">
+                            <div class="col-left">
+                                <h1>Field Appearance Settings</h1>
+                                <p>Appearance settings descriptions goes here....Please enable the business days of your store so all the calculations of cut-off time and minimum delivery time will be done based on these weekdays and not based on delivery weekdays.</p>
+                            </div>
+                            <div class="col-right">
+                                <button type="button">Save Settings</button>
+                            </div>
+                        </div>
+
+                        <div class="wbc-accordion">
+                            <div class="panel-group ordd-accordian" id="wbc-accordion">
+                                <!-- First Panel -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h2 class="panel-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false">
+                                            Title Goes Here - Where do we move this?
+                                        </h2>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <div class="tbl-mod-1">
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Show Time Slots in List View:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <label class="el-switch el-switch-green">
+                                                                <input type="checkbox" name="cb_opt_nm_25" value="cb_opt_val_25" checked>
+                                                                <span class="el-switch-style"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Show Delivery Dates in Dropdown:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <label class="el-switch el-switch-green">
+                                                                <input type="checkbox" name="cb_opt_nm_26" value="cb_opt_val_26" checked>
+                                                                <span class="el-switch-style"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row flx-center">
+                                                    <div class="col-left">
+                                                        <label>Calendar Display Mode:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <select class="ib-md">
+                                                                <option>Show calender always open</option>
+                                                                <option>Show calender always close</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Second Panel -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h2 class="panel-title" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
+                                            Field Appearance
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse show">
+                                        <div class="panel-body">
+                                            <div class="tbl-mod-1">
+                                                <div class="tm1-row flx-center">
+                                                    <div class="col-left">
+                                                        <label>Field Placeholder Text:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <input class="ib-md" type="text" name="" placeholder="Text Here">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Field Note Text:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <textarea class="ta-sm" placeholder="Type your notes here"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Estimated Delivery Date Text:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <textarea class="ta-sm" placeholder="Your Estimated shipping date for the order is %shipping_date%. The delivery will take approximately <strong>%delivery_range_start_days% -"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Fields Placement on the Checkout Page:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="row-box-1">
+                                                            <div class="rb1-left">
+                                                                <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            </div>
+                                                            <div class="rb1-right">
+                                                                <div class="rb1-row flx-center">
+                                                                    <div class="rb-col">
+                                                                        <ul class="ul-rb-list">
+                                                                            <li>
+                                                                                <div class="el-radio el-radio-green">
+                                                                                    <input type="radio" name="rb_opt_nm" id="6_1" value="" disabled>
+                                                                                    <label class="el-radio-style" for="6_1"></label>
+                                                                                </div>
+                                                                                <label class="el-rb-label disabled" for="6_1">In Billing Section</label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="el-radio el-radio-green">
+                                                                                    <input type="radio" name="rb_opt_nm" id="6_2" value="" checked>
+                                                                                    <label class="el-radio-style" for="6_2"></label>
+                                                                                </div>
+                                                                                <label class="el-rb-label" for="6_2">In Shipping Section</label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="el-radio el-radio-green">
+                                                                                    <input type="radio" name="rb_opt_nm" id="6_3" value="">
+                                                                                    <label class="el-radio-style" for="6_3"></label>
+                                                                                </div>
+                                                                                <label class="el-rb-label" for="6_3">Before Order Notes</label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="el-radio el-radio-green">
+                                                                                    <input type="radio" name="rb_opt_nm" id="6_4" value="" disabled>
+                                                                                    <label class="el-radio-style" for="6_4"></label>
+                                                                                </div>
+                                                                                <label class="el-rb-label disabled" for="6_4">After Order Notes</label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="el-radio el-radio-green">
+                                                                                    <input type="radio" name="rb_opt_nm" id="6_5" value="">
+                                                                                    <label class="el-radio-style" for="6_5"></label>
+                                                                                </div>
+                                                                                <label class="el-rb-label" for="6_5">Between Your Order & Payment Section</label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <div class="el-radio el-radio-green">
+                                                                                    <input type="radio" name="rb_opt_nm" id="6_6" value="">
+                                                                                    <label class="el-radio-style" for="6_6"></label>
+                                                                                </div>
+                                                                                <label class="el-rb-label" for="6_6">Custom:</label>
+                                                                                <input class="cr-ib-box" type="text" name="" placeholder="woocommerce_review_order_before_submit" />
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Delivery Date Field on Cart page:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <label class="el-switch el-switch-green">
+                                                                <input type="checkbox" name="cb_opt_nm_27" value="cb_opt_val_27" checked>
+                                                                <span class="el-switch-style"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Auto-Populate First Available Delivery Date:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <label class="el-switch el-switch-green">
+                                                                <input type="checkbox" name="cb_opt_nm_28" value="cb_opt_val_28" checked>
+                                                                <span class="el-switch-style"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tm1-row">
+                                                    <div class="col-left">
+                                                        <label>Auto-Populate First Available Delivery Time Slot:</label>
+                                                    </div>
+                                                    <div class="col-right">
+                                                        <div class="rc-flx-wrap flx-aln-center">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                            <label class="el-switch el-switch-green">
+                                                                <input type="checkbox" name="cb_opt_nm_29" value="cb_opt_val_29" checked>
+                                                                <span class="el-switch-style"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+
+                        <div class="ss-foot">
+                            <button type="button">Save Settings</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Area End -->
+
+        <!-- Footer -->
+        <div class="ordd-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-wrap">
+                            <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                                <img class="msg-icon" src="assets/images/icon-info-grey.svg" alt="Logo" /><a href="#">Get our Subscriptions Addon</a> & setup recurring deliveries with WooCommerce Subscriptions plugin & Booking Delivery Date plugin.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="ft-text">
+                                <p><a href="#">Need Support?</a> <strong>We’re always happy to help you.</strong></p>
+                                <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </div>
+
+    <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-tokenfield.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,1779 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
+    <link rel="stylesheet" href="assets/css/choices.min.css">
+    <script src="assets/js/choices.min.js"></script>
+    
+    <title>ORDD - Delivery Schedule</title>
+</head>
+<body>
+    <div id="ordd-page" class="ordd-page">
+
+        <!-- Header -->
+        <div class="ordd-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-wrap">
+                            <div class="branding">
+                                <a href=""><img src="assets/images/ordd-logo.svg" alt="Logo" /></a>
+                            </div>
+
+                            <nav class="navbar navbar-expand-lg navbar-light ordd-navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/></svg>
+                                </span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav menu nav-menu">
+                                        <li class="nav-link"><a class="nav-link" href="welcome-page.html">ORDD Home</a></li>
+                                        <li class="nav-item active"><a class="nav-link" href="delivery-schedule.html">Delivery Schedule</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="business-days.html">Settings</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="pickup-locations.html">Pickup Locations</a></li>
+ <li class="nav-item"><a class="nav-link" href="label-message.html">Appearance</a></li>                                        <li class="nav-item"><a class="nav-link" href="google-calendar-sync.html">Integrations</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="delivery-calendar.html">Delivery Calender</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <div class="ordd-version">
+                                <p class="ver-fig">Version 5.7.2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Content Area -->
+        <div class="ordd-content-area">
+            <div class="container cw-wide">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ordd-delivery-schedule">
+                            
+                            <!-- Top Section -->
+                            <div class="ordd-ds-top">
+                                <h1>Delivery Schedule</h1>
+                                <div class="ordd-ds-search">
+                                    <div class="search-box">
+                                        <form action="#" method="post">
+                                            <input type="search" name="" placeholder="Search Delivery schedule">
+                                        </form>
+                                    </div>
+                                    <div class="ordd-doc-link">
+                                        <a href="#" class="go-link">Documentation</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Top Section End -->
+
+                            <!-- Content Section -->
+                            <div class="ordd-ds-content">
+                                <div class="tbl-delivery-schedule tbl-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Status</th>
+                                                <th>Settings based on</th>
+                                                <th>Delivery Settings</th>
+                                                <th>Same day Settings</th>
+                                                <th>Next day Settings</th>
+                                                <th>Timeslots Settings</th>
+                                                <th>Holidays</th>
+                                                <th>Time Settings</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="cloned-row">
+                                                <td>
+                                                    <label class="el-switch el-switch-green">
+                                                        <input type="checkbox" name="cb_opt_nm_1" value="cb_opt_val_1" checked>
+                                                        <span class="el-switch-style"></span>
+                                                    </label>
+                                                </td>
+                                                <td><strong>Default Delivery Schedule</strong></td>
+                                                <td>
+                                                    <ul>
+                                                        <li><label>Delivery Checkout option:</label> Delivery Calendar</li>
+                                                        <li><label>Delivery Days/Dates:</label> Wednesday</li>
+                                                        <li><label>Maximum Order Deliveries per day:</label> Unlimited</li>
+                                                        <li><label>Number of dates to choose:</label> 30</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>
+                                                            <label>Cut-off:</label> 3:00
+                                                            <label>Charges:</label> $10
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li>
+                                                            <label>Cut-off:</label> 3:00
+                                                            <label>Charges:</label> $10
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li><label>Weekday:</label> Wednesday, Thursday, Friday</li>
+                                                        <li><label>Time Slot:</label> 08:30 AM - 09:00 AM</li>
+                                                        <li><label>Mandatory Field:</label> Yes</li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <ul>
+                                                        <li><label>Use Global Holidays:</label> Yes</li>
+                                                        <li><label></label>07-15-2021</li>
+                                                        <li><label>Type:</label> Recurring</li>
+                                                    </ul>
+                                                </td>
+                                                <td>10:35 AM To 05:00 PM</td>
+                                                <td class="tbl-action-col">
+                                                    <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                    <a class="edit-delvry-sche" data-toggle="collapse" href="#acds-collapse-opt" id="shiping-method111" role="button" aria-expanded="false" aria-controls="collapseExample"> Edit</a>
+                                                    <a class="Duplicate" title="Duplicate" >Duplicate</a>
+                                                    <a class="delete text-danger" title="Delete" >Delete</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="alt-in-tbl">
+                                                <td colspan="9">
+                                                    <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                                                        <img class="msg-icon" src="assets/images/icon-info-grey.svg" alt="Logo" /> Custom Settings you add below, will override default settings
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="for-action">
+                                        <tr>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-primary blue-button btn-sm add-new">Save Setting</button>
+                                                <a class="edit-delvry-sche edit" data-toggle="collapse" href="#" id="action-edit" role="button" aria-expanded="false" aria-controls="collapseExample"> Edit</a>
+                                                <a class="action-disable text-danger" data-toggle="collapse" href="#" id="action-disable" role="button" aria-expanded="false" aria-controls="collapseExample"> Delete</a>
+                                            
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <!-- Add Custom Delivery Settings -->
+                                <div id="acds-collapse-opt" class="collapse add-custom-delivery-settings">
+                                    <div class="top-row pad-lr-60">
+                                        <h2>Add Custom Delivery Settings</h2>
+                                        <a class="button" href="#">Save Settings</a>
+                                    </div>
+                                    <div class="content-row pad-lr-60">
+                                        <div class="col-wrap">
+                                            <div class="sbo-col">
+                                                <strong>Settings Based On:</strong>
+                                            </div>
+                                            <div class="sbo-col">
+                                                <div class="acds-row">
+                                                    <div class="rd-box">
+                                                        <div class="el-radio el-radio-green">
+                                                            <input type="radio" name="rb_opt_nm" id="2_5" value="rb_opt_val_1" checked>
+                                                            <label class="el-radio-style" for="2_5"></label>
+                                                        </div>
+                                                        <label for="2_5">Shipping Methods</label>
+                                                    </div>
+                                                    <select id="choices-multiple-remove-button" placeholder="Select upto 5 tags" multiple>
+                                                        <option value="weight based 2 Free shipping">Free shipping</option>
+                                                        <option value="weight based 2 Free shipping">weight based 2  Free shipping</option>
+                                                        <option value="weight based 3 -> Weight Based Shipping">weight 3 -> Weight Shipping</option>
+                                                        <option value="Weight Based - gujarat">Weight Based - gujarat</option>
+                                                        
+                                                    </select> 
+
+                                                </div>
+                                            </div>
+                                            <div class="sbo-col">
+                                                <div class="acds-row">
+                                                    <div class="rd-box">
+                                                        <div class="el-radio el-radio-green">
+                                                            <input type="radio" name="rb_opt_nm" id="2_6" value="rb_opt_val_2">
+                                                            <label class="el-radio-style" for="2_6"></label>
+                                                        </div>
+                                                        <label for="2_6">Product Categories</label>
+                                                    </div>
+                                                    <select class="ib-md" name="pro-ib-md">
+                                                        <option>Select Product Categories</option>
+                                                    </select>
+                                                </div>
+                                                <div class="acds-row pro-cat-shiping-method">
+                                                    <div class="rd-box">
+                                                        <label>Shipping Methods</label>
+                                                    </div>
+                                                    <select class="ib-md" name="pro-ib-md"> 
+                                                        <option>weight based 2 -> Free shipping</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="sbo-col">
+                                                <div class="acds-row">
+                                                    <div class="rd-box">
+                                                        <div class="el-radio el-radio-green">
+                                                            <input type="radio" name="rb_opt_nm" id="2_7" value="rb_opt_val_3">
+                                                            <label class="el-radio-style" for="2_7"></label>
+                                                        </div>
+                                                        <label for="2_7">Pickup Locations</label>
+                                                    </div>
+                                                    <select class="ib-md" name="pick-ib-md">
+                                                        <option>Select Pickup Location</option>
+                                                    </select>
+                                                </div>
+                                                <div class="acds-row pick-loc-pro-cat">
+                                                    <label>Product Categories</label>
+                                                    <select class="ib-md" name="pick-ib-md">
+                                                        <option>Select Product Categories</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add Custom Delivery Settings - End -->
+
+                                <!-- Delivery Settings Accordian -->
+                                <div id="acds_pc_div" class="cds-accordian rb_opt rb_opt_val_1">
+                                    <div class="cds-inner-wrap pad-lr-60">
+                                        <div class="cds-show-all"><a id="cds-show-all" class="go-link wo-ico">Show All</a></div>
+
+                                        <div class="panel-group ordd-accordian" id="accordion">
+                                            <!-- First Panel -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
+                                                        Date Settings
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseOne" class="panel-collapse collapse show">
+                                                    <div class="panel-body">
+                                                        <div class="tbl-mod-1">
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Enable Delivery Date on The Checkout Page:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <label class="el-switch el-switch-green">
+                                                                            <input type="checkbox" name="cb_opt_nm_2" value="cb_opt_val_2" checked>
+                                                                            <span class="el-switch-style"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Delivery Checkout Options:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center ro-wrap">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        
+                                                                        <div class="rb-flx-style">
+                                                                            <div class="el-radio el-radio-green">
+																				<input type="radio" name="ds_dco_rb_opt_nm_1" id="DCO_calendar" value="DCO_calendar" checked>
+																				<label class="el-radio-style" for="DCO_calendar"></label>
+																			</div>
+																			<label for="DCO_calendar">Calendar</label>
+                                                                        </div>
+                                                                        <div class="rb-flx-style">
+                                                                            <div class="el-radio el-radio-green">
+																				<input type="radio" name="ds_dco_rb_opt_nm_1" id="DCO_text_block" value="DCO_text_block">
+																				<label class="el-radio-style" for="DCO_text_block"></label>
+																			</div>
+																			<label for="DCO_text_block">Text Block</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                          
+                                                        <!-- Start Text Block-->
+                                                            <div class="tm1-row DCO_text_block">
+                                                                <div class="col-left">
+                                                                    <label>Minimum Delivery Time:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <!-- <input class="ib-md" type="time" name="min-delvry-time" value="Minimum Delivery Time"> -->
+                                                                        <select class="ib-md">
+                                                                            <option>04:15 PM</option>
+                                                                            <option>05:15 PM</option>
+                                                                            <option>06:15 PM</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row DCO_text_block">
+                                                                <div class="col-left">
+                                                                    <label>Delivery Range:</label>
+                                                                </div>
+                                                                
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center dtr-wrap">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <select>
+                                                                            <option>01</option>
+                                                                            <option>02</option>
+                                                                            <option>03</option>
+                                                                        </select>
+                                                                        <span class="to-sep">and</span>
+                                                                        <select>
+                                                                            <option>04</option>
+                                                                            <option>05</option>
+                                                                            <option>06</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        <!-- //End Text block-->
+
+                                                    <!-- Start Calendar block-->
+                                                            <div class="tm1-row DCO_calendar">
+                                                                <div class="col-left">
+                                                                    <label>Delivery Days & Specific Delivery Dates:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <label class="el-switch el-switch-green">
+                                                                            <input type="checkbox" name="cb_opt_nm_3" value="cb_opt_val_3">
+                                                                            <span class="el-switch-style"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="tbl-mod-2 flx-100 cb_opt cb_opt_val_3">
+                                                                    <div class="tm2-inner-wrap tbl-responsive" >
+                                                                        <table class="table" id="delivery_days_table">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Delivery Days/Dates</th>
+                                                                                    <th>Additional Charges</th>
+                                                                                    <th>Charges Label</th>
+                                                                                    <th>Maximum Orders</th>
+                                                                                    <th>Actions</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr class="cloned-row">
+                                                                                    <td>Sunday</td>
+                                                                                    <td>$ 25</td>
+                                                                                    <td>Charges Label</td>
+                                                                                    <td>N/A</td>
+                                                                                    <td>
+                                                                                        <a class="add  text-success" title="Update" data-toggle="tooltip">Update</a>
+                                                                                        <a class="delivery_days_table_edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                        <a class="enable" title="Enable">Enable</a>
+                                                                                        <a class="disable" title="Disable">Disable</a>
+                                                                                        <!-- <a class="cancle add" title="Disable">Cancle</a> -->
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr class="cloned-row">
+                                                                                    <td>Monday</td>
+                                                                                    <td>$</td>
+                                                                                    <td>Charges Label</td>
+                                                                                    <td>N/A</td>
+                                                                                    <td>
+                                                                                        <a class="add text-success" title="Update" data-toggle="tooltip">Update</a>
+                                                                                        <a class="delivery_days_table_edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                        <a class="enable" title="Enable">Enable</a>
+                                                                                        <a class="disable" title="Disable">Disable</a>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr class="cloned-row">
+                                                                                    <td>Tuesday</td>
+                                                                                    <td>$ 28</td>
+                                                                                    <td>Charges Label</td>
+                                                                                    <td>N/A</td>
+                                                                                    <td>
+                                                                                        <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                                                        <a class="delivery_days_table_edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                        <a class="enable" title="Enable">Enable</a>
+                                                                                        <a class="disable" title="Disable">Disable</a>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr class="cloned-row">
+                                                                                    <td>Wednesday</td>
+                                                                                    <td>$</td>
+                                                                                    <td>Charges Label</td>
+                                                                                    <td>N/A</td>
+                                                                                    <td>
+                                                                                        <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                                                        <a class="delivery_days_table_edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                        <a class="enable" title="Enable">Enable</a>
+                                                                                        <a class="disable" title="Disable">Disable</a>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr class="cloned-row">
+                                                                                    <td>Thursday</td>
+                                                                                    <td>$</td>
+                                                                                    <td>Charges Label</td>
+                                                                                    <td>N/A</td>
+                                                                                    <td>
+                                                                                        <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                                                        <a class="delivery_days_table_edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                        <a class="enable" title="Enable">Enable</a>
+                                                                                        <a class="disable" title="Disable">Disable</a>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr class="cloned-row">
+                                                                                    <td>Friday</td>
+                                                                                    <td>$</td>
+                                                                                    <td>Charges Label</td>
+                                                                                    <td>N/A</td>
+                                                                                    <td>
+                                                                                        <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                                                        <a class="delivery_days_table_edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                        <a class="enable" title="Enable">Enable</a>
+                                                                                        <a class="disable" title="Disable">Disable</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="cloned-row">
+                                                                                    <td>Saturday</td>
+                                                                                    <td>$</td>
+                                                                                    <td>Charges Label</td>
+                                                                                    <td>N/A</td>
+                                                                                    <td class="tbl-action-col-sm">
+                                                                                        <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                                                        <a class="delivery_days_table_edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                        <a class="enable" title="Enable">Enable</a>
+                                                                                        <a class="disable" title="Disable">Disable</a>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                        <div class="ads-link">
+                                                                            <a class="add_delivery_days"><img src="assets/images/icon-plus.svg" alt="Icon" /> Add Specific Delivery Dates</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+
+                                                            <div class="tm1-row DCO_calendar">
+                                                                <div class="col-left">
+                                                                    <label>Specific Delivery Dates:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <label class="el-switch el-switch-green">
+                                                                            <input type="checkbox" name="cb_opt_nm_4" value="cb_opt_val_4" checked>
+                                                                            <span class="el-switch-style"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row DCO_calendar">
+                                                                <div class="col-left">
+                                                                    <label>Maximum Order Deliveries Per Day (based on per order):</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <select class="ib-md">
+                                                                            <option>15</option>
+                                                                            <option>20</option>
+                                                                            <option>25</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row DCO_calendar">
+                                                                <div class="col-left">
+                                                                    <label>Mandatory Field?:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <label class="el-switch el-switch-green">
+                                                                            <input type="checkbox" name="cb_opt_nm_5" value="cb_opt_val_5" checked>
+                                                                            <span class="el-switch-style"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row DCO_calendar">
+                                                                <div class="col-left">
+                                                                    <label>Number of Dates to Choose:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <select class="ib-md">
+                                                                            <option>10</option>
+                                                                            <option>15</option>
+                                                                            <option>20</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row DCO_calendar">
+                                                                <div class="col-left">
+                                                                    <label>Date Field Label:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <input class="ib-md" type="text" name="" placeholder="Delivery Date Lable" value="Delivery Date">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        <!-- //End Calendar block-->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Second Panel -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">
+                                                        Time Slot
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseTwo" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <div class="tbl-mod-1">
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Enable Delivery Time:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <label class="el-switch el-switch-green">
+                                                                            <input type="checkbox" name="cb_opt_nm_6" value="cb_opt_val_6" checked>
+                                                                            <span class="el-switch-style"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Delivery Time Range:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center dtr-wrap">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <select>
+                                                                            <option>04:15 PM</option>
+                                                                            <option>05:15 PM</option>
+                                                                            <option>06:15 PM</option>
+                                                                        </select>
+                                                                        <span class="to-sep">To</span>
+                                                                        <select>
+                                                                            <option>04:15 PM</option>
+                                                                            <option>05:15 PM</option>
+                                                                            <option>06:15 PM</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Enable Time Slot Capture:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <label class="el-switch el-switch-green">
+                                                                            <input type="checkbox" name="cb_opt_nm_7" value="cb_opt_val_7" checked>
+                                                                            <span class="el-switch-style"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Mandatory Field?:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <label class="el-switch el-switch-green">
+                                                                            <input type="checkbox" name="cb_opt_nm_8" value="cb_opt_val_8" checked>
+                                                                            <span class="el-switch-style"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Show 'As Soon As Possible' Option:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <label class="el-switch el-switch-green">
+                                                                            <input type="checkbox" name="cb_opt_nm_9" value="cb_opt_val_9" checked>
+                                                                            <span class="el-switch-style"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Time Slot Field Label:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <input class="ib-md" type="text" name="" Placeholder="Dilvery Time Slots" value="Time Slot">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="tbl-mod-2 flx-100 mt-20">
+                                                                    <div class="tm2-inner-wrap">
+                                                                        <table class="table">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th width="5%">
+                                                                                        <div class="el-checkbox el-checkbox-green d-uni-col">
+                                                                                            <input type="checkbox" class="ckbCheckAll" id="cb_opt_nm_9A" value="cb_opt_val_9" checked>
+                                                                                            <label class="el-checkbox-style mb-0" for="cb_opt_nm_9A"></label>
+                                                                                            
+                                                                                        </div>
+                                                                                    </th>
+                                                                                    <th><span>Delivery Days/Dates</span></th>
+                                                                                    <th>Time Slot</th>
+                                                                                    <th>Maximum Order Deliveries per time slot</th>
+                                                                                    <th>Additional Charges for time slot</th>
+                                                                                    <th>Delivery Charges label</th>
+                                                                                    <th>Actions</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr class="cloned-row">
+                                                                                    <td>
+                                                                                        <div class="el-checkbox el-checkbox-green d-uni-col">
+                                                                                            <input type="checkbox" class="checkBoxClass" id="cb_opt_nm_10" value="cb_opt_val_10" checked>
+                                                                                            <label class="el-checkbox-style mb-0" for="cb_opt_nm_10"></label>
+                                                                                            
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td><span>28-06-2021</span></td>
+                                                                                    <td>11:00 AM - 02:00 PM</td>
+                                                                                    <td>05</td>
+                                                                                    <td>$15</td>
+                                                                                    <td>Delivery Charges label</td>
+                                                                                    <td>
+                                                                                        <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                                                        <a class="time-slote-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                        <a class="delete" title="Delete">Delete</a>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr class="cloned-row">
+                                                                                    <td>
+                                                                                        <div class="el-checkbox el-checkbox-green d-uni-col">
+                                                                                            <input type="checkbox" class="checkBoxClass" id="cb_opt_nm_11" value="cb_opt_val_11" checked>
+                                                                                            <label class="el-checkbox-style mb-0" for="cb_opt_nm_11"></label>
+                                                                                            
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td><span>02-07-2021</span></td>
+                                                                                    <td>09:00 AM - 11:00 AM</td>
+                                                                                    <td>4</td>
+                                                                                    <td>$20</td>
+                                                                                    <td>Delivery Charges label</td>
+                                                                                    <td>
+                                                                                        <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                                                        <a class="time-slote-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                        <a class="delete" title="Delete">Delete</a>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr class="cloned-row">
+                                                                                    <td>
+                                                                                        <div class="el-checkbox el-checkbox-green d-uni-col">
+                                                                                            <input type="checkbox" class="checkBoxClass" id="cb_opt_nm_12" value="cb_opt_val_12" checked>
+                                                                                            <label class="el-checkbox-style mb-0" for="cb_opt_nm_12"></label>
+                                                                                            
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td><span>Friday</span></td>
+                                                                                    <td>05:10 PM - 06:30 PM</td>
+                                                                                    <td>10</td>
+                                                                                    <td>$450</td>
+                                                                                    <td>Delivery Charges label</td>
+                                                                                    <td>
+                                                                                        <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                                                        <a class="time-slote-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                        <a class="delete" title="Delete">Delete</a>
+                                                                                    </td>
+                                                                                </tr>
+
+                                                                                <tr class="cloned-row">
+                                                                                    <td>
+                                                                                        <div class="el-checkbox el-checkbox-green d-uni-col">
+                                                                                            <input type="checkbox" class="checkBoxClass" id="cb_opt_nm_13" value="cb_opt_val_13" checked>
+                                                                                            <label class="el-checkbox-style mb-0" for="cb_opt_nm_13"></label>
+                                                                                            
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td><span>Saturday</span></td>
+                                                                                    <td>10:00 AM - 01:15 PM</td>
+                                                                                    <td>15</td>
+                                                                                    <td>$150</td>
+                                                                                    <td>Delivery Charges label</td>
+                                                                                    <td class="tbl-action-col-sm">
+                                                                                        <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                                                        <a class="time-slote-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                        <a class="delete" title="Delete">Delete</a>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                        <div id="col_opt_id_1" class="collapse tbl-mod-3 bdr-btm-1">
+                                                                            <!-- Add Individual Time Slots -->
+                                                                            <div class="tbl-mod-1">
+                                                                                <div class="tm3-header">
+                                                                                    <h3>Add Individual Time Slots</h3>
+                                                                                </div>
+                                                                                <div class="tm1-row">
+                                                                                    <div class="col-left">
+                                                                                        <label>Time Slot For:</label>
+                                                                                    </div>
+                                                                                    <div class="col-right">
+                                                                                        <div class="rc-flx-wrap flx-aln-center ro-wrap">
+                                                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                                            <div class="rb-flx-style">
+                                                                                                <div class="el-radio el-radio-green">
+                                                                                                    <input type="radio" name="time_slot_indivisual" id="time_slot_3_1" value="rb_opt_val_1" checked>
+                                                                                                    <label class="el-radio-style" for="time_slot_3_1"></label>
+                                                                                                </div>
+                                                                                                <label for="time_slot_3_1">Weekdays</label>
+                                                                                            </div>
+                                                                                            <div class="rb-flx-style">
+                                                                                                <div class="el-radio el-radio-green">
+                                                                                                    <input type="radio" name="time_slot_indivisual" id="time_slot_3_2" value="rb_opt_val_1">
+                                                                                                    <label class="el-radio-style" for="time_slot_3_2"></label>
+                                                                                                </div>
+                                                                                                <label for="time_slot_3_2">Specific Dates</label>
+                                                                                            </div>     
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            <!-- Add Individual Time Slots Weekend- End -->`
+                                                                                <div class="tm1-row ind_tm_slote_weekday">
+                                                                                    <div class="col-left">
+                                                                                        <label>Select Delivery Days:</label>
+                                                                                    </div>
+                                                                                    <div class="col-right">
+                                                                                        <div class="row-box-1">
+                                                                                            <div class="rb1-left">
+                                                                                                <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
+                                                                                            </div>
+                                                                                            <div class="rb1-right">
+                                                                                                <div class="rb1-row flx-center">
+                                                                                                    <div class="rb-col w-50">
+                                                                                                        <label>Select Weekdays</label>
+                                                                                                        <select id="choices-multiple-remove-button" class="ib-small" placeholder="Select Days" multiple>
+                                                                                                            <option value="Sunday">Sunday</option>
+                                                                                                            <option value="Monday">Monday</option>
+                                                                                                            <option value="Tuesday">Tuesday</option>
+                                                                                                            <option value="Wednesday">Wednesday</option>
+                                                                                                        </select> 
+                                                                                                        <!-- <select class="ib-small" name="weekday" id="weekday"><option value="Monday">Monday</option><option value="Tuesday">Tuesday</option><option value="Wednesday">Wednesday </option><option value="Thursday">Thursday</option><option value="Friday">Friday </option><option value="Saturday">Saturday</option><option value="Sunday">Sunday</option></select> -->
+                                                                                                        <!-- <input type="text" class="form-control" id="tokenfield1" value="Monday, Tuesday, Wednesday" /> -->
+                                                                                                    
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div> 
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="tm1-row ind_tm_slote_spec_date">
+                                                                                    <div class="col-left">
+                                                                                        <label>Select Delivery Dates:</label>
+                                                                                    </div>
+                                                                                    <div class="col-right">
+                                                                                        <div class="row-box-1">
+                                                                                            <div class="rb1-left">
+                                                                                                <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
+                                                                                            </div>
+                                                                                            <div class="rb1-right">
+                                                                                                <div class="rb1-row flx-center">
+                                                                                                    <div class="rb-col w-50">
+                                                                                                        <label>Select Dates</label>
+                                                                                                        <select id="choices-multiple-remove-button" class="ib-small" placeholder="Select Dates" multiple>
+                                                                                                            <option value="21-1-21">21-9-21</option>
+                                                                                                            <option value="21-1-21">22-9-21</option>
+                                                                                                            <option value="21-1-21">23-9-21</option>
+                                                                                                            <option value="21-1-21">24-9-21</option>
+                                                                                                            <option value="21-1-21">25-9-21</option>
+                                                                                                            <option value="21-1-21">26-9-21</option>
+                                                                                                            <option value="21-1-21">27-9-21</option>
+                                                                                                        </select> 
+                                                                                                        <!-- <input type="text" class="form-control id-md" id="tokenfield1" value="21-1-21, 23-2-21, 12-2-21" /> -->
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div> 
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="tm1-row">
+                                                                                    <div class="col-left">
+                                                                                        <label>Time From/To:</label>
+                                                                                    </div>
+                                                                                    <div class="col-right">
+                                                                                        <div class="row-box-1">
+                                                                                            <div class="rb1-left">
+                                                                                                <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                                            </div>
+                                                                                            <div class="rb1-right ind-time-slote">
+                                                                                                <div class="mb-3">    
+                                                                                                    <div class="rb1-row flx-center">
+                                                                                                        <div class="rb-col">
+                                                                                                            <select class="ib-sm">
+                                                                                                                <option>04:15 PM</option>
+                                                                                                                <option>05:15 PM</option>
+                                                                                                                <option>06:15 PM</option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                        <div class="rb-col">To</div>
+                                                                                                        <div class="rb-col">
+                                                                                                            <select class="ib-sm">
+                                                                                                                <option>04:15 PM</option>
+                                                                                                                <option>05:15 PM</option>
+                                                                                                                <option>06:15 PM</option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                        <div class="rb-col">
+                                                                                                            <a class="link-del" title="Delete" >Delete</a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                
+                                                                                                <div class="mb-3">
+                                                                                                    <div class="rb1-row flx-center">
+                                                                                                        <div class="rb-col">
+                                                                                                            <select class="ib-sm">
+                                                                                                                <option>04:15 PM</option>
+                                                                                                                <option>05:15 PM</option>
+                                                                                                                <option>06:15 PM</option>
+                                                                                                            </select class="ib-sm">
+                                                                                                        </div>
+                                                                                                        <div class="rb-col">To</div>
+                                                                                                        <div class="rb-col">
+                                                                                                            <select class="ib-sm">
+                                                                                                                <option>04:15 PM</option>
+                                                                                                                <option>05:15 PM</option>
+                                                                                                                <option>06:15 PM</option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                        <div class="rb-col">
+                                                                                                            <a class="link-del" title="Delete" >Delete</a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="rb1-row flx-center mt-3">
+                                                                                                <div class="rb-col">
+                                                                                                    <a class="link-vol-ul add-div-time-slote ml-4">Add Another Slot</a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="tm1-row">
+                                                                                    <div class="col-left">
+                                                                                        <label>Maximum Order Deliveries Per Time Slot (based on per order):</label>
+                                                                                    </div>
+                                                                                    <div class="col-right">
+                                                                                        <div class="row-box-1">
+                                                                                            <div class="rb1-left">
+                                                                                                <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                                            </div>
+                                                                                            <div class="rb1-right">
+                                                                                                <div class="rb1-row flx-center">
+                                                                                                    <div class="rb-col">
+                                                                                                        <select class="ib-md">
+                                                                                                            <option>03</option>
+                                                                                                            <option>04</option>
+                                                                                                            <option>05</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="tm1-row">
+                                                                                    <div class="col-left">
+                                                                                        <label>Additional Charges for Time Slot and Delivery Charges label:</label>
+                                                                                    </div>
+                                                                                    <div class="col-right">
+                                                                                        <div class="row-box-1">
+                                                                                            <div class="rb1-left">
+                                                                                                <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
+                                                                                            </div>
+                                                                                            <div class="rb1-right">
+                                                                                                <div class="rb1-row flx-center">
+                                                                                                    <div class="rb-col">
+                                                                                                        <label>Charges</label>
+                                                                                                        <select class="ib-sm">
+                                                                                                            <option>$ 50</option>
+                                                                                                            <option>$ 60</option>
+                                                                                                            <option>$ 70</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                    <div class="rb-col">
+                                                                                                        <label>Time Slot Charges Label</label>
+                                                                                                        <input class="ib-md" type="text" name="" />
+                                                                                                    </div>
+                                                                                                    
+                                                                                                </div>
+                                                                                                <div class="rb1-row flx-center">
+                                                                                                    <div class="rb-col">
+                                                                                                        <a href="#" class="secondary-btn">Save Settings</a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+                                                                            <!-- Add Individual Time Slots Weekend- End -->
+
+                                                                           
+                                                                        </div>
+                                                                            
+                                                                        <div id="col_opt_id_2" class="collapse tbl-mod-3 bdr-btm-1">
+                                                                            <!-- Add Bulk Time Slots -->
+                                                                            <div class="tbl-mod-1">
+                                                                                <div class="tm3-header">
+                                                                                    <h3>Add Bulk Time Slots</h3>
+                                                                                </div>
+                                                                                <div class="tm1-row">
+                                                                                    <div class="col-left">
+                                                                                        <label>Time Slot For:</label>
+                                                                                    </div>
+                                                                                    <div class="col-right">
+                                                                                        <div class="rc-flx-wrap flx-aln-center ro-wrap">
+                                                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                                            <div class="rb-flx-style">
+                                                                                                <div class="el-radio el-radio-green">
+                                                                                                    <input type="radio" name="time_slot_bulk" id="bulk_time_slot_5_1" value="rb_opt_val_1" checked>
+                                                                                                    <label class="el-radio-style" for="bulk_time_slot_5_1"></label>
+                                                                                                </div>
+                                                                                                <label for="bulk_time_slot_5_1">Weekdays</label>
+                                                                                            </div>
+                                                                                            <div class="rb-flx-style">
+                                                                                                <div class="el-radio el-radio-green">
+                                                                                                    <input type="radio" name="time_slot_bulk" id="bulk_time_slot_5_2" value="rb_opt_val_1">
+                                                                                                    <label class="el-radio-style" for="bulk_time_slot_5_2"></label>
+                                                                                                </div>
+                                                                                                <label for="bulk_time_slot_5_2">Specific Dates</label>
+                                                                                            </div> 
+                                                                                          
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="tm1-row bulk_tm_slote_weekday">
+                                                                                    <div class="col-left">
+                                                                                        <label>Select Delivery Days:</label>
+                                                                                    </div>
+                                                                                    <div class="col-right">
+                                                                                        <div class="row-box-1">
+                                                                                            <div class="rb1-left">
+                                                                                                <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
+                                                                                            </div>
+                                                                                            <div class="rb1-right">
+                                                                                                <div class="rb1-row flx-center">
+                                                                                                    <div class="rb-col">
+                                                                                                        <label>Select Weekdays</label>
+                                                                                                        <select id="choices-multiple-remove-button" class="ib-small" placeholder="Select Days" multiple>
+                                                                                                            <option value="Sunday">Sunday</option>
+                                                                                                            <option value="Monday">Monday</option>
+                                                                                                            <option value="Tuesday">Tuesday</option>
+                                                                                                            <option value="Wednesday">Wednesday</option>
+                                                                                                        </select> 
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div> 
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="tm1-row bulk_tm_slote_spec_date">
+                                                                                    <div class="col-left">
+                                                                                        <label>Select Delivery Dates:</label>
+                                                                                    </div>
+                                                                                    <div class="col-right">
+                                                                                        <div class="row-box-1">
+                                                                                            <div class="rb1-left">
+                                                                                                <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
+                                                                                            </div>
+                                                                                            <div class="rb1-right">
+                                                                                                <div class="rb1-row flx-center">
+                                                                                                    <div class="rb-col">
+                                                                                                        <label>Select Dates</label>
+                                                                                                        <select id="choices-multiple-remove-button" class="ib-small" placeholder="Select Dates" multiple>
+                                                                                                            <option value="21-1-21">21-9-21</option>
+                                                                                                            <option value="21-1-21">22-9-21</option>
+                                                                                                            <option value="21-1-21">23-9-21</option>
+                                                                                                            <option value="21-1-21">24-9-21</option>
+                                                                                                            <option value="21-1-21">25-9-21</option>
+                                                                                                            <option value="21-1-21">26-9-21</option>
+                                                                                                            <option value="21-1-21">27-9-21</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div> 
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="tm1-row">
+                                                                                    <div class="col-left">
+                                                                                        <label>Time Slot Duration:</label>
+                                                                                    </div>
+                                                                                    <div class="col-right">
+                                                                                        <div class="row-box-1">
+                                                                                            <div class="rb1-left">
+                                                                                                <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                                            </div>
+                                                                                            <div class="rb1-right">
+                                                                                                <div class="rb1-row flx-center">
+                                                                                                    <div class="rb-col">
+                                                                                                        <select class="ib-md">
+                                                                                                            <option>10</option>
+                                                                                                            <option>20</option>
+                                                                                                            <option>30</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div> 
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="tm1-row">
+                                                                                    <div class="col-left">
+                                                                                        <label>Interval Between Time Slots:</label>
+                                                                                    </div>
+                                                                                    <div class="col-right">
+                                                                                        <div class="row-box-1">
+                                                                                            <div class="rb1-left">
+                                                                                                <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                                            </div>
+                                                                                            <div class="rb1-right">
+                                                                                                <div class="rb1-row flx-center">
+                                                                                                    <div class="rb-col">
+                                                                                                        <select class="ib-md">
+                                                                                                            <option>05</option>
+                                                                                                            <option>10</option>
+                                                                                                            <option>15</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div> 
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="tm1-row">
+                                                                                    <div class="col-left">
+                                                                                        <label>Time From/To:</label>
+                                                                                    </div>
+                                                                                    <div class="col-right">
+                                                                                        <div class="row-box-1">
+                                                                                            <div class="rb1-left">
+                                                                                                <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                                            </div>
+
+                                                                                            <div class="rb1-right bulk-time-slote" >
+                                                                                                <div class="mb-3">    
+                                                                                                    <div class="rb1-row flx-center">
+                                                                                                        <div class="rb-col">
+                                                                                                            <select class="ib-sm">
+                                                                                                                <option>04:15 PM</option>
+                                                                                                                <option>05:15 PM</option>
+                                                                                                                <option>06:15 PM</option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                        <div class="rb-col">To</div>
+                                                                                                        <div class="rb-col">
+                                                                                                            <select class="ib-sm">
+                                                                                                                <option>04:15 PM</option>
+                                                                                                                <option>05:15 PM</option>
+                                                                                                                <option>06:15 PM</option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                        <div class="rb-col">
+                                                                                                            <a class="link-del delete" title="Delete" >Delete</a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                
+                                                                                                <div class="mb-3">
+                                                                                                    <div class="rb1-row flx-center">
+                                                                                                        <div class="rb-col">
+                                                                                                            <select class="ib-sm">
+                                                                                                                <option>04:15 PM</option>
+                                                                                                                <option>05:15 PM</option>
+                                                                                                                <option>06:15 PM</option>
+                                                                                                            </select class="ib-sm">
+                                                                                                        </div>
+                                                                                                        <div class="rb-col">To</div>
+                                                                                                        <div class="rb-col">
+                                                                                                            <select class="ib-sm">
+                                                                                                                <option>04:15 PM</option>
+                                                                                                                <option>05:15 PM</option>
+                                                                                                                <option>06:15 PM</option>
+                                                                                                            </select>
+                                                                                                        </div>
+                                                                                                        <div class="rb-col">
+                                                                                                            <a class="link-del" title="Delete" >Delete</a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="rb1-row flx-center mt-2">
+                                                                                                <div class="rb-col">
+                                                                                                    <a class="link-vol-ul add-bulk-time-slote ml-3">Add Another Slot</a>
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="tm1-row">
+                                                                                    <div class="col-left">
+                                                                                        <label>Maximum Order Deliveries Per Time Slot (based on per order):</label>
+                                                                                    </div>
+                                                                                    <div class="col-right">
+                                                                                        <div class="row-box-1">
+                                                                                            <div class="rb1-left">
+                                                                                                <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                                            </div>
+                                                                                            <div class="rb1-right">
+                                                                                                <div class="rb1-row flx-center">
+                                                                                                    <div class="rb-col">
+                                                                                                        <select class="ib-md">
+                                                                                                            <option>03</option>
+                                                                                                            <option>04</option>
+                                                                                                            <option>05</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="tm1-row">
+                                                                                    <div class="col-left">
+                                                                                        <label>Additional Charges for Time Slot and Delivery Charges label:</label>
+                                                                                    </div>
+                                                                                    <div class="col-right">
+                                                                                        <div class="row-box-1">
+                                                                                            <div class="rb1-left">
+                                                                                                <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
+                                                                                            </div>
+                                                                                            <div class="rb1-right">
+                                                                                                <div class="rb1-row flx-center">
+                                                                                                    <div class="rb-col">
+                                                                                                        <label>Charges</label>
+                                                                                                        <select class="ib-sm">
+                                                                                                            <option>$ 50</option>
+                                                                                                            <option>$ 60</option>
+                                                                                                            <option>$ 70</option>
+                                                                                                        </select>
+                                                                                                    </div>
+                                                                                                    <div class="rb-col">
+                                                                                                        <label>Time Slot Charges Label</label>
+                                                                                                        <input class="ib-md" type="text" name="" />
+                                                                                                    </div>
+                                                                                                    
+                                                                                                </div>
+                                                                                                <div class="rb1-row flx-center">
+                                                                                                    <div class="rb-col">
+                                                                                                        <a href="#" class="secondary-btn">Save Settings</a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- Add Bulk Time Slots - End -->
+                                                                        </div>
+
+                                                                        <div class="ads-link link-flx">
+                                                                            <a class="al-link" data-toggle="collapse" href="#col_opt_id_1" role="button" aria-expanded="false" aria-controls="col_opt_id_1"><img src="assets/images/icon-plus.svg" alt="Icon" /> Add Individual Time Slot</a>
+                                                                            <a class="al-link" data-toggle="collapse" href="#col_opt_id_2" role="button" aria-expanded="false" aria-controls="col_opt_id_2"><img src="assets/images/icon-plus.svg" alt="Icon" /> Add Time Slots in Bulk</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="abulk-box">
+                                                                    <select class="ib-small">
+                                                                        <option>Bulk Action</option>
+                                                                        <option>Delete</option>
+                                                                    </select>
+                                                                    <button class="trietary-btn reverse" type="button">Apply</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Third Panel -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
+                                                        Delivery Schedule Settings
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseThree" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <div class="tbl-mod-1">
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Minimum Delivery Time:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <input class="ib-md" type="text" name="" value="Minimum delivery time (in hours)">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Cut-off time for Same Day Delivery Orders:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <select class="ib-md">
+                                                                            <option>06:15 PM</option>
+                                                                            <option>04:15 PM</option>
+                                                                            <option>05:15 PM</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Additional Charges for Same Day Delivery:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <select class="ib-md">
+                                                                            <option>$ 05</option>
+                                                                            <option>$ 02</option>
+                                                                            <option>$ 03</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Cut-off time for Next Day Delivery Orders:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <select class="ib-md">
+                                                                            <option>04:15 PM</option>
+                                                                            <option>05:15 PM</option>
+                                                                            <option>06:15 PM</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Additional Charges for Next Day Delivery:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <select class="ib-md">
+                                                                            <option>$ 01</option>
+                                                                            <option>$ 02</option>
+                                                                            <option>$ 03</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Fourth Panel -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false">
+                                                        Additional Charges
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseFour" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <div class="tbl-mod-1">
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Additional Charges for Same Day Delivery:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <select class="ib-md">
+                                                                            <option>$ 05</option>
+                                                                            <option>$ 02</option>
+                                                                            <option>$ 03</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Additional Charges for Next Day Delivery:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <select class="ib-md">
+                                                                            <option>$ 05</option>
+                                                                            <option>$ 02</option>
+                                                                            <option>$ 03</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Minimum Order Amount for Waiving off Delivery Charges:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <select class="ib-md">
+                                                                            <option>10</option>
+                                                                            <option>20</option>
+                                                                            <option>30</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Enable Delivery Charges Based on Number of Days (Rush Delivery Charges):</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <label class="el-switch el-switch-green">
+                                                                            <input type="checkbox" name="cb_opt_nm_14" value="cb_opt_val_14">
+                                                                            <span class="el-switch-style"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="bdr-t cb_opt cb_opt_val_14">
+                                                                <div class="tm1-row">
+                                                                    <div class="col-left">
+                                                                        <label>Additional Charges Based on Number of Days From Current Date:</label>
+                                                                    </div>
+                                                                    <div class="col-right">
+                                                                        <div class="row-box-1">
+                                                                            <div class="rb1-left">
+                                                                                <img class="tt-info aw-text" src="assets/images/icon-info.svg" alt="Info">
+                                                                            </div>
+                                                                           
+                                                                            <div class="rb1-right add_charg_row">
+                                                                                <div class="mb-3">
+                                                                                    <div class="rb1-row flx-end">
+                                                                                        <div class="rb-col">
+                                                                                            <label>No. of days</label>
+                                                                                            <select class="ib-sm">
+                                                                                                <option>5</option>
+                                                                                                <option>6</option>
+                                                                                                <option>7</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="rb-col">
+                                                                                            <label>Delivery Charges Label</label>
+                                                                                            <input class="ib-md-2" type="text" name="" placeholder="Delivery Charges Label">
+                                                                                        </div>
+                                                                                        <div class="rb-col">
+                                                                                            <label>Delivery Charges</label>
+                                                                                            <select class="ib-md-2">
+                                                                                                <option>$15</option>
+                                                                                                <option>$20</option>
+                                                                                                <option>$25</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="rb-col">
+                                                                                            <a class="link-del" title="Delete" >Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="mb-3">
+                                                                                    <div class="rb1-row flx-end">
+                                                                                        <div class="rb-col">
+                                                                                            <label>No. of days</label>
+                                                                                            <select class="ib-sm">
+                                                                                                <option>5</option>
+                                                                                                <option>6</option>
+                                                                                                <option>7</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="rb-col">
+                                                                                            <label>Delivery Charges Label</label>
+                                                                                            <input class="ib-md-2" type="text" name="" placeholder="Delivery Charges Label">
+                                                                                        </div>
+                                                                                        <div class="rb-col">
+                                                                                            <label>Delivery Charges</label>
+                                                                                            <select class="ib-md-2">
+                                                                                                <option>$15</option>
+                                                                                                <option>$20</option>
+                                                                                                <option>$25</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="rb-col">
+                                                                                            <a class="link-del" title="Delete" >Delete</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rb1-row flx-center  mt-2">
+                                                                                <div class="rb-col">
+                                                                                    <a class="link-vol-ul add-chrgs-number-days ml-4">Add More</a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Fifth Panel -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false">
+                                                        Weekdays
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseFive" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <div class="tbl-mod-1">
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Weekday Based Schedule:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <label class="el-switch el-switch-green">
+                                                                            <input type="checkbox" name="cb_opt_nm_15" value="cb_opt_val_15">
+                                                                            <span class="el-switch-style"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div id="wbs-toggle-div" class="tbl-mod-2 flx-100 mb-15 cb_opt cb_opt_val_15">
+                                                                <div class="tm2-inner-wrap tbl-responsive">
+                                                                    <table class="table" id="weekday-based-schedule">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th><span class="tw-info">Weekday<img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here"></span></th>
+                                                                                <th><span class="tw-info">Same Day Cut-off<img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here"></span></th>
+                                                                                <th><span class="tw-info">Next Day Cut-off<img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here"></span></th>
+                                                                                <th><span class="tw-info">Weekday Before Next Day Cut-off Time<img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here"></span></th>
+                                                                                <th><span class="tw-info">Weekday After Next Day Cut-off Time<img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here"></span></th>
+                                                                                <th><span class="tw-info">Minimum Time<img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here"></span></th>
+                                                                                <th><span class="tw-info">Actions<img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here"></span></th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="cloned-row">
+                                                                                <td>Monday</td>
+                                                                                <td>00:15 AM</td>
+                                                                                <td>05 : 44 AM</td>
+                                                                                <td>Tuesday</td>
+                                                                                <td>Monday</td>
+                                                                                <td>8</td>
+                                                                                <td>
+                                                                                    <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                                                    <a class="weekdays-sch-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                    <a class="delete" title="Delete">Delete</a>
+                                                                                </td>
+                                                                            </tr>
+
+                                                                            <tr class="cloned-row">
+                                                                                <td>Tuesday</td>
+                                                                                <td>03 : 00 PM</td>
+                                                                                <td>03 : 00 PM</td>
+                                                                                <td>Weekday</td>
+                                                                                <td>Weekday</td>
+                                                                                <td>5</td>
+                                                                                <td class="tbl-action-col-sm">
+                                                                                    <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                                                    <a class="weekdays-sch-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                    <a class="delete" title="Delete">Delete</a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    
+                                                                    <div class="ads-link">
+                                                                        <a class="al-link add-more-weekday"><img src="assets/images/icon-plus.svg" alt="Icon" /> Add More</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Sixth Panel -->
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false">
+                                                        Holidays
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseSix" class="panel-collapse collapse">
+                                                    <div class="panel-body">
+                                                        <div class="tbl-mod-1">
+                                                            <div class="tm1-row">
+                                                                <div class="col-left">
+                                                                    <label>Use Global Holidays:</label>
+                                                                </div>
+                                                                <div class="col-right">
+                                                                    <div class="rc-flx-wrap flx-aln-center">
+                                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                                        <label class="el-switch el-switch-green">
+                                                                            <input type="checkbox" name="cb_opt_nm_16" value="cb_opt_val_16">
+                                                                            <span class="el-switch-style"></span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="cb_opt cb_opt_val_16">
+                                                                <div class="tbl-mod-2 flx-100 mb-15">
+                                                                    <div class="tm2-inner-wrap tbl-responsive">
+                                                                        <div class="globle-holidy">
+                                                                            <table class="table" id="global-holidays">
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th>
+                                                                                            <div class="el-checkbox el-checkbox-green d-uni-col">
+                                                                                                <input type="checkbox" class="ckbCheckAll" id="cb_opt_nm_17" value="cb_opt_val_17">
+                                                                                                <label class="el-checkbox-style mb-0" for="cb_opt_nm_17"></label>
+                                                                                            </div>
+
+                                                                                            <!-- <div class="el-checkbox el-checkbox-green d-uni-col">
+                                                                                                <input type="checkbox" name="cb_opt_nm_17" value="cb_opt_val_17">
+                                                                                                <label class="el-checkbox-style mb-0" for="cb_opt_nm_17"></label>
+                                                                                            </div> -->
+                                                                                        </th>
+                                                                                        <th>Name</th>
+                                                                                        <th>Date</th>
+                                                                                        <th>Type</th>
+                                                                                        <th>Actions</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr class="cloned-row">
+                                                                                        <td>
+                                                                                            <div class="el-checkbox el-checkbox-green d-uni-col">
+                                                                                                <input type="checkbox" class="checkBoxClass" id="cb_opt_nm_18" value="cb_opt_val_18">
+                                                                                                <label class="el-checkbox-style mb-0" for="cb_opt_nm_18"></label>
+                                                                                            </div>
+                                                                    
+                                                                                        </td>
+                                                                                        <td>Thanksgiving Day</td>
+                                                                                        <td>12-06-2021</td>
+                                                                                        <td>Current Year Only</td>
+                                                                                        <td>
+                                                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                                                            <a class="globle-holidy-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                            <a class="delete" title="Delete" data-toggle="tooltip">Delete</a>
+                                                                                        </td>
+                                                                                    </tr>
+    
+                                                                                    <tr class="cloned-row">
+                                                                                        <td>
+                                                                                            <div class="el-checkbox el-checkbox-green d-uni-col">
+                                                                                                <input type="checkbox" class="checkBoxClass" id="cb_opt_nm_19" value="cb_opt_val_19">
+                                                                                                <label class="el-checkbox-style mb-0" for="cb_opt_nm_19"></label>
+                                                                                            </div>
+                                                                                            <!-- <div class="el-checkbox el-checkbox-green d-uni-col">
+                                                                                                <input type="checkbox" name="cb_opt_nm_19" value="cb_opt_val_19" checked>
+                                                                                                <label class="el-checkbox-style mb-0" for="3_5"></label>
+                                                                                            </div> -->
+                                                                                        </td>
+                                                                                        <td>Christmas Day</td>
+                                                                                        <td>12-06-2021  To  20-06-2021</td>
+                                                                                        <td>Recurring Every Year</td>
+                                                                                        <td class="tbl-action-col-sm">
+                                                                                            <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                                                            <a class="globle-holidy-edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                                                            <a class="delete" title="Delete">Delete</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                        
+                                                                        
+                                                                        <div class="ads-link">
+                                                                            <a class="al-link add-more-holidays"><img src="assets/images/icon-plus.svg" alt="Icon" /> Add More</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="tm1-row bdr-0 pt-0 delvry-sch-bottom">
+                                                                    <div class="abulk-box pt-0 ">
+                                                                        <select class="ib-small">
+                                                                            <option>Bulk Action</option>
+                                                                            <option>Edit</option>
+                                                                        </select>
+                                                                        <button class="trietary-btn reverse" type="button">Apply</button>
+                                                                    </div>
+
+                                                                    <div class="abulk-box pt-0 float-right">
+                                                                        <a class="button" href="#">Save Settings</a>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="acds_pc_div" class="cds-accordian rb_opt rb_opt_val_2">
+                                    <div class="pad-lr-60">Product Categories Options</div>
+                                </div>
+
+                                <div id="acds_pc_div" class="cds-accordian rb_opt rb_opt_val_3">
+                                    <div class="pad-lr-60">Pickup Locations Options</div>
+                                </div>
+                                <!-- Delivery Settings Accordian End -->
+                                
+                                <!-- Add Delivery Schedule -->
+                                <div class="ads-link">
+                                    <!-- <a class="add-new-delivr-sch" data-toggle="collapse" href="#acds-collapse-opt" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="assets/images/icon-plus.svg" alt="Icon" /> Add Delivery Schedule</a> -->
+                                    <a class="" data-toggle="collapse" href="#acds-collapse-opt" id="shiping-method" role="button" aria-expanded="false" aria-controls="collapseExample"><img src="assets/images/icon-plus.svg" alt="Icon" /> Add Delivery Schedule</a>
+                                </div>
+                                <!-- Add Delivery Schedule - End -->
+                            </div>
+                            <!-- Content Section End -->
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Area End -->
+
+        <!-- Footer -->
+        <div class="ordd-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-wrap">
+                            <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                                <img class="msg-icon" src="assets/images/icon-info-grey.svg" alt="Logo" /><a href="#">Get our Subscriptions Addon</a> & setup recurring deliveries with WooCommerce Subscriptions plugin & Booking Delivery Date plugin.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="ft-text">
+                                <p><a href="#">Need Support?</a> <strong>We’re always happy to help you.</strong></p>
+                                <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </div>
+
+    <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="assets/js/jquery-3.3.1.slim.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/js/bootstrap-tokenfield.js"></script> -->
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

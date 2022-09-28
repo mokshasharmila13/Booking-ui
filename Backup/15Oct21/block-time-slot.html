@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/checkbox.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-tokenfield.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
+    <link rel="stylesheet" href="assets/css/choices.min.css">
+    <script src="assets/js/choices.min.js"></script>
+    <title>ORDD - Block Time Slots</title>
+</head>
+<body>
+    <div id="ordd-page" class="ordd-page">
+
+        <!-- Header -->
+        <div class="ordd-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-wrap">
+                            <div class="branding">
+                                <a href=""><img src="assets/images/ordd-logo.svg" alt="Logo" /></a>
+                            </div>
+
+                            <nav class="navbar navbar-expand-lg navbar-light ordd-navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z" fill="rgba(255,255,255,1)"/></svg>
+                                </span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav menu nav-menu">
+                                        <li class="nav-link"><a class="nav-link" href="welcome-page.html">ORDD Home</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="delivery-schedule.html">Delivery Schedule</a></li>
+                                        <li class="nav-item active"><a class="nav-link" href="business-days.html">Settings</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="pickup-locations.html">Pickup Locations</a></li>
+ <li class="nav-item"><a class="nav-link" href="label-message.html">Appearance</a></li>                                        <li class="nav-item"><a class="nav-link" href="google-calendar-sync.html">Integrations</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="delivery-calendar.html">Delivery Calender</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <div class="ordd-version">
+                                <p class="ver-fig">Version 5.7.2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Content Area -->
+        <div class="ordd-content-area">
+            <div class="container cw-full secondary-nav">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Secondary Navigation -->
+                        <div class="secondary-nav-wrap">
+                            <ul>
+                                <li><a href="business-days.html">Business Days</a></li>
+                                <li class="current-menu-item"><a href="block-time-slot.html">Block Time Slot</a></li>
+                                <li><a href="common-schedule-settings.html">Common Schedule Settings</a></li>
+                            </ul>
+                        </div>
+                        <!-- Secondary Navigation - End -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="container bts-page-wrap">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ordd-page-head">
+                            <h1>Block Time Slots</h1>
+                            <p>Block time slots descriptions goes here....Please enable the business days of your store so all the calculations of cut-off time and minimum delivery time will be done based on these weekdays and not based on delivery weekdays.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="bts-content">
+                            <div class="tbl-mod-2 flx-100">
+                                <div class="tm2-inner-wrap">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Delivery Days/Dates</th>
+                                                <th>Time Slot</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="cloned-row">
+                                                <td>28-06-2021</td>
+                                                <td>11:00 AM - 02:00 PM</td>
+                                                <td>
+                                                    <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                    <a class="edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                    <a class="delete" title="Delete">Delete</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="cloned-row">
+                                                <td>28-06-2021</td>
+                                                <td>09:00 AM - 11:00 AM</td>
+                                                <td>
+                                                    <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                    <a class="edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                    <a class="delete" title="Delete">Delete</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="cloned-row">
+                                                <td>28-06-2021</td>
+                                                <td>Delivery Charges label</td>
+                                                <td>
+                                                    <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                    <a class="edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                    <a class="delete" title="Delete">Delete</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="cloned-row">
+                                                <td>28-06-2021</td>
+                                                <td>10:00 AM - 01:15 PM</td>
+                                                <td>
+                                                    <a class="add" title="Update" data-toggle="tooltip">Update</a>
+                                                    <a class="edit" title="edit" data-toggle="tooltip">Edit</a>
+                                                    <a class="delete" title="Delete">Delete</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div id="col_opt_id_1" class="collapse tbl-mod-3 bdr-btm-1">
+                                        <!-- Add Time Slots -->
+                                        <div class="tbl-mod-1">
+                                            <div class="tm3-header">
+                                                <h3>Add Time Slots</h3>
+                                            </div>
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Block Time Slot For:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="rc-flx-wrap flx-aln-center ro-wrap">
+                                                        <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        <div class="el-radio el-radio-green">
+                                                            <input type="radio" name="rb_opt_nm_2" id="time_slot_3_1" value="rb_opt_val_6" checked>
+                                                            <label class="el-radio-style" for="time_slot_3_1"></label>
+                                                            <span>Dates</span>
+                                                        </div>
+                                                        <div class="el-radio el-radio-green">
+                                                            <input type="radio" name="rb_opt_nm_2" id="time_slot_3_2" value="rb_opt_val_7">
+                                                            <label class="el-radio-style" for="time_slot_3_2"></label>
+                                                            <span>Weekdays</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row ind_tm_slote_weekday">
+                                                <div class="col-left">
+                                                    <label>Delivery Date:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="row-box-1">
+                                                        <div class="rb1-left">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        </div>
+                                                        <div class="rb1-right">
+                                                            <div class="rb1-row flx-center">
+                                                                <div class="rb-col w-50">
+                                                                    <label>Select Dates</label>
+                                                                    <select id="choices-multiple-remove-button" class="ib-small" placeholder="Select Dates" multiple>
+                                                                        <option value="21-1-21">21-9-21</option>
+                                                                        <option value="21-1-21">22-9-21</option>
+                                                                        <option value="21-1-21">23-9-21</option>
+                                                                        <option value="21-1-21">24-9-21</option>
+                                                                        <option value="21-1-21">25-9-21</option>
+                                                                        <option value="21-1-21">26-9-21</option>
+                                                                        <option value="21-1-21">27-9-21</option>
+                                                                    </select>  
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row ind_tm_slote_spec_date">
+                                                <div class="col-left">
+                                                    <label>Weekdays:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="row-box-1">
+                                                        <div class="rb1-left">
+                                                            <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        </div>
+                                                        <div class="rb1-right">
+                                                            <div class="rb1-row flx-center">
+                                                                <div class="rb-col w-50">
+                                                                    <label>Select Weekdays</label>
+                                                                    <select id="choices-multiple-remove-button" class="ib-small" placeholder="Select Days" multiple>
+                                                                        <option value="Sunday">Sunday</option>
+                                                                        <option value="Monday">Monday</option>
+                                                                        <option value="Tuesday">Tuesday</option>
+                                                                        <option value="Wednesday">Wednesday</option>
+                                                                    </select> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+
+                                            <div class="tm1-row">
+                                                <div class="col-left">
+                                                    <label>Select Time Slots to Block:</label>
+                                                </div>
+                                                <div class="col-right">
+                                                    <div class="row-box-1">
+                                                        <div class="rb1-left">
+                                                             <img class="tt-info" src="assets/images/icon-info.svg" alt="Info" data-toggle="tooltip" data-placement="top" title="Tooltip content goes here">
+                                                        </div>
+                                                        <div class="rb1-right">
+                                                            <div class="rb1-row flx-center">
+                                                                <div class="rb-col">
+                                                                    <label>Select Time Slot to Block.</label>
+                                                                    <select id="choices-multiple-remove-button" class="ib-small" placeholder="Select Time Slot" multiple>
+                                                                        <option value="415pmto445pm">4:15 PM to 4:45 PM</option>
+                                                                        <option value="Monday">4:55 PM to 5:25 PM</option>
+                                                                        <option value="Tuesday">5:35 PM to 5:55 PM</option>
+                                                                        <option value="Wednesday">6:15 PM to 6:45 PM</option>
+                                                                    </select> 
+                                                                </div>
+                                                            </div>
+                                                            <div class="rb1-row flx-center">
+                                                                <div class="rb-col">
+                                                                    <a href="#" class="secondary-btn">Save Settings</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Add Time Slots - End -->
+                                    </div>
+                                        
+                                    <div class="ads-link link-flx">
+                                        <a class="al-link" data-toggle="collapse" href="#col_opt_id_1" role="button" aria-expanded="false" aria-controls="col_opt_id_1"><img src="assets/images/icon-plus.svg" alt="Icon" /> Add More</a>
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Area End -->
+
+        <!-- Footer -->
+        <div class="ordd-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-wrap">
+                            <div class="alert alert-dark alert-dismissible fade show" role="alert">
+                                <img class="msg-icon" src="assets/images/icon-info-grey.svg" alt="Logo" /><a href="#">Get our Subscriptions Addon</a> & setup recurring deliveries with WooCommerce Subscriptions plugin & Booking Delivery Date plugin.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="ft-text">
+                                <p><a href="#">Need Support?</a> <strong>We’re always happy to help you.</strong></p>
+                                <p><a href="#">Please rate this plugin</a> <span class="rating">★★★★★</span> if this product helped you. <br>Thanks for your support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+    </div>
+
+    
+    <!-- Optional JavaScript -- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-tokenfield.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
